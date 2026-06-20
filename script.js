@@ -23,7 +23,7 @@ async function getWeather() {
 
         const data = await response.json();
 
-        // Update UI
+       
         document.getElementById('cityName').textContent = data.name;
         document.getElementById('temp').textContent = Math.round(data.main.temp);
         document.getElementById('condition').textContent = data.weather[0].description;
